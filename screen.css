@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    margin: 60px;
+    margin-bottom: 0;
+}
+
+html {
+    background-color: black;
+}
+
+h1, h2, h3,h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    color: palevioletred;
+    margin-bottom: 5px;
+}
+
+li + a {
+    list-style-type: circle;
+    color: white;
+}
+
+nav {
+    margin-bottom: 80px;
+}
+
+a {
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+li {
+    line-height: 50px;
+}
+
+a:link {
+    color: white;
+}
+
+
+a:visited{
+    color: palevioletred;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr; 
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+
+h2 + p {
+     width: 70%;
+}
+
+section {
+    margin-top: 80px;
+}
+
+footer {
+    padding: 10px;
+    letter-spacing: 2px;
+    background: radial-gradient(circle,rgba(219, 112, 147, 0.5), black);
+    margin-top: 80px;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+h5 + p {
+    margin-top: 0px;
+}
+
+h4 + h5 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
