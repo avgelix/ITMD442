@@ -82,3 +82,56 @@ h4 + h5 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+
+.top {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: max-content; 
+    height: 50px; 
+    letter-spacing: 3px;
+    color: palevioletred;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    margin: 0;
+    padding-left: 100%;
+    padding-right: 80px;
+    padding-bottom: 20px;
+}
+
+#me {
+    height:100%;
+    padding-bottom: 50px;
+}
+
+#about {
+    background: radial-gradient(circle,rgba(219, 112, 147, 0.5), black);
+    padding: 30px;
+    padding-left: 80px;
+    padding-top: 10px;
+    margin-left: -80px;
+}
+
+
+#github:hover {
+    background-color:palevioletred;
+    padding-left: 20px;
+}
+
+#content {
+    justify-items: center;
+}
+
+
+#work {
+    margin-top: 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+}
+
+#experience {
+    text-align: center;
+}
