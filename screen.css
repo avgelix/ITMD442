@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Lato:wght@400;700&display=swap');
-
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin: 60px;
     margin-bottom: 0;
@@ -12,8 +10,8 @@ html {
 }
 
 h1, h2, h3,h4 {
-    font-family: 'Quicksand', sans-serif;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
 
 h1 {
     margin-bottom: 0px;
@@ -25,15 +23,23 @@ h4 {
 }
 
 li + a {
-    list-style-type: circle;
     color: white;
 }
 
 nav {
     margin-bottom: 80px;
     margin-top: 80px;
+    margin-left: 20px;
 }
 
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 a {
     font-style: italic;
     letter-spacing: 2px;
@@ -55,10 +61,11 @@ a:visited{
 
 header {
     display: grid;
-    grid-template-columns: 2fr 0.5fr; 
-    gap: 20px;
-    align-items: center;
+    grid-template-columns: 1fr 0.5fr; 
+    align-items: end;
     margin: 20px;
+    margin-top: 150px;
+
 }
 
 h2 + p {
@@ -66,7 +73,7 @@ h2 + p {
 }
 
 section {
-    margin-top: 80px;
+    padding-top: 50px;
 }
 
 footer {
@@ -90,24 +97,31 @@ h4 + h5 {
 
 .top {
     position: fixed;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
     top: 0px;
     right: 0px;
     width: max-content; 
     height: 50px; 
     letter-spacing: 3px;
-    color: palevioletred;
+    color: white;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
+    background-color: rgb(74, 26, 42);
     margin: 0;
     padding-left: 100%;
-    padding-right: 80px;
-    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
-
+#dashboard {
+    font-size: 16px;
+    line-height: 60px;
+    color:white;
+    text-decoration: none;
+}
 #me {
     height:100%;
-    margin-top: 20px;
 }
 
 #about {
@@ -116,7 +130,14 @@ h4 + h5 {
     padding-left: 80px;
     padding-top: 10px;
     margin-left: -80px;
+    margin-right: 20%;
+    line-height: 30px;
 }
+
+#about > p {
+    margin-top: 30px;
+}
+
 
 
 #github:hover {
@@ -128,20 +149,63 @@ h4 + h5 {
     justify-items: center;
 }
 
-
 #work {
     margin-top: 0px;
-    width: 100%;
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 10px;
+    gap: 10px;*/
+    margin-top: 40px;
+    border-style: solid;
+    padding: 20px;
+    padding-top: 0;
+    border-right: none;
+    border-bottom: none;
+    
 }
 
 #experience {
     text-align: center;
 }
 
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:0;
+}
+
+#content > section {
+    width: -webkit-fill-available;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#projects {
+    border-style: solid;
+    border-left: none;
+    border-top: none;
+    margin-bottom: -41px;
+}
+
+
+#news {
+    padding-top: 100px;
+}
+
+
+
 @media only screen and (max-width: 1360px) {
+
+    h2 + p {
+        width: 100%;
+    }
+
+    #socials {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
 
     header {
         display: block;
@@ -158,6 +222,10 @@ h4 + h5 {
         justify-content: center;
     }
 
+    #me {
+        margin-top: -10px;
+    }
+
     nav {
         margin-top:50px;
         text-align: center;
@@ -167,4 +235,53 @@ h4 + h5 {
         list-style-position: inside;
         padding: 0px;
     }
+
+    #content {
+        display: block;
+    }
+
+
+    #content > section {
+        padding: 30px;
+        margin-top: 0px;
+    }
+
+    #work > section {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    #projects {
+        margin-bottom: 0px;
+    }
+    
+    #projects, #work {
+        border-style: none;
+    }
+
+    .top {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    #dashboard {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0px;
+        margin-top: 100px;
+    }
+
+    header {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    footer > p {
+        font-size: 10px;
+    }
+
 }
