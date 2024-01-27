@@ -188,9 +188,19 @@ h4 + h5 {
 
 
 #news {
-    padding-top: 100px;
+    margin-top: 40px;
 }
 
+#notes {
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+}
+
+#projects:hover, #news:hover, #work:hover, #notes:hover {
+    /*background-image: url("images/stars-background.png");
+    background-size: cover;*/
+    background: radial-gradient(circle, black,rgba(219, 112, 147, 0.5));
+}
 
 
 @media only screen and (max-width: 1360px) {
