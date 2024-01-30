@@ -40,6 +40,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 a {
     font-style: italic;
     letter-spacing: 2px;
@@ -53,7 +54,6 @@ li {
 a:link {
     color: white;
 }
-
 
 a:visited{
     color: palevioletred;
@@ -88,6 +88,8 @@ footer {
 
 h5 + p {
     margin-top: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h4 + h5 {
@@ -114,12 +116,14 @@ h4 + h5 {
     padding-top: 5px;
     padding-bottom: 15px;
 }
+
 #dashboard {
     font-size: 16px;
     line-height: 60px;
     color:white;
     text-decoration: none;
 }
+
 #me {
     height:100%;
 }
@@ -138,22 +142,12 @@ h4 + h5 {
     margin-top: 30px;
 }
 
-
-
-#github:hover {
-    background-color:palevioletred;
-    padding-left: 20px;
-}
-
 #content {
     justify-items: center;
 }
 
 #work {
     margin-top: 0px;
-    /*display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px;*/
     margin-top: 40px;
     border-style: solid;
     padding: 20px;
@@ -186,7 +180,6 @@ h4 + h5 {
     margin-bottom: -41px;
 }
 
-
 #news {
     margin-top: 40px;
 }
@@ -197,8 +190,6 @@ h4 + h5 {
 }
 
 #projects:hover, #news:hover, #work:hover, #notes:hover {
-    /*background-image: url("images/stars-background.png");
-    background-size: cover;*/
     background: radial-gradient(circle, black,rgba(219, 112, 147, 0.5));
 }
 
@@ -222,9 +213,9 @@ h4 + h5 {
     }
 
     #about {
-        width: 100%;
-        padding-left: 0;
-        margin-left: 0;
+        margin-right: 0px;
+        margin-left: 10px;
+        padding-left: 20px;
     }
 
     header > div {
@@ -286,10 +277,6 @@ h4 + h5 {
     body {
         margin: 0px;
         margin-top: 100px;
-    }
-
-    #about {
-        padding-left: 20px;
     }
 
     header {
